@@ -4,24 +4,25 @@ import "./App.css";
 import "./lib/font-awesome/css/all.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Favorites } from "./components/Favorites";
-import { Watched } from "./components/Watched";
 import { Add } from "./components/Add";
+import { Viewed } from './components/Viewed';
 
+import { GlobalProvider } from './context/Globals';
 
 const App = () => {
   return (
-  <div>
+    <GlobalProvider>
       <Router>
       <Home />
       <Routes>
+        
         <Route path='/favorites' element={<Favorites />} />
-        <Route path='/watched' element={<Watched />} />
+        <Route path='/viewed' element={<Viewed />} />
         <Route path='/add' element={<Add />} />
       
       </Routes>
     </Router>
-      </div>
-
+    </GlobalProvider>
   );
 }
 
