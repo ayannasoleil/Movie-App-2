@@ -23,7 +23,7 @@ export const Favorites = () => {
               ))}
             </div>
           ) : (
-            <h2 className='no-movies'>No movies added yet.</h2>
+            <h2 className='no-movies'>No favorites added yet.</h2>
           )}
         </div>
       </div>

@@ -2,7 +2,11 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/Globals';
 
 export const Controls = ({ type, movie }) => {
-  const { removeMovieFromFavorites, addMovieToViewed, moveToFavorites, removeFromViewed } = useContext(GlobalContext);
+  const { 
+    removeMovieFromFavorites, 
+    addMovieToViewed, 
+    moveToFavorites, 
+    removeFromViewed } = useContext(GlobalContext);
   
   return (
   <div className='innner-card-controls'>

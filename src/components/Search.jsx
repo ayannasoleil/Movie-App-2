@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Results } from './Results';
 
-export const Add = () => {
+export const Search = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   
-  const onChange = e => {
+  const onChange = (e) => {
     e.preventDefault();
 
     setQuery(e.target.value);

@@ -32,14 +32,14 @@ const Home = () => {
           </Typography>
           <Button color="inherit" component={ Link } to='/favorites'>Favorites</Button>
           <Button color="inherit" component={ Link } to='/viewed'>Viewed</Button>
-          <Button color="inherit" component={ Link } to='/add'>+ Add</Button>
+          <Button color="inherit" component={ Link } to='/search'>Search</Button>
         </Toolbar>
         </Container>
       </AppBar>
 
     </div>
-  );
 
+  );
 }
 
 export default Home;

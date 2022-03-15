@@ -2,17 +2,22 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/Globals';
 
 export const Results = ({ movie }) => {
-  const { addMovieToFavorites, addMovieToViewed, favorites, viewed } = useContext(GlobalContext);
+  const { 
+    addMovieToFavorites, 
+    addMovieToViewed, 
+    favorites, 
+    viewed 
+  } = useContext(GlobalContext);
 
     let storedMovie = favorites.find((o) => o.id === movie.id);
     let storedMovieViewed = viewed.find((o) => o.id === movie.id);
     
-    
-    const favoritesDisabled = storedMovie ? true : storedMovieViewed ? true : false;
+    const favoritesDisabled = storedMovie 
+    ? true : storedMovieViewed ? true : false;
 
     const viewedDisabled = storedMovieViewed ? true : false;
    
-    return (
+  return (
   <div className='result-card'>
     <div className="poster-wrapper">
       {movie.poster_path ? (
@@ -25,19 +30,20 @@ export const Results = ({ movie }) => {
     </div>
 
     <div className='info'>
-      <div className="header">
-        <h3 className="title">{movie.title}</h3>
+    <div className="header">
+      <h3 className="title">{movie.title}</h3>
     </div>
 
     <div className="controls">
       <button className="btn"
       disabled={favoritesDisabled}
-      onClick={() => addMovieToFavorites(movie)}>Add to Favorites</button>
+      onClick={() => addMovieToFavorites(movie)}>
+      Add to Favorites</button>
     
     <button className='btn'
     disabled={viewedDisabled}
     onClick={() => addMovieToViewed(movie)}>
-      Add to Viewed
+    Add to Viewed
     </button>  
     </div>
     </div>
