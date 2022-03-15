@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Results } from './Results';
 
 export const Add = () => {
@@ -23,7 +23,7 @@ export const Add = () => {
   
   return (
     <div className="add-page">
-      <div className="add-container">
+      <div className="container">
         <div className="add-content">
           <div className="input-wrapper">
             <input type="text" 
@@ -32,9 +32,10 @@ export const Add = () => {
             onChange={onChange}
             />
           </div>
+
           {results.length > 0 && (
             <ul className="results">
-              {results.map(movie => (
+              {results.map((movie) => (
                 <li key={movie.id}>
                   <Results movie={movie} />
                 </li>
