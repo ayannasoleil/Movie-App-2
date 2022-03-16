@@ -6,7 +6,7 @@ import { Viewed } from "./components/Viewed";
 import { Search } from "./components/Search";
 import "./App.css";
 import "./lib/font-awesome/css/all.min.css";
-import { GlobalProvider } from './context/Globals';
+import { GlobalProvider } from './globals/Globals';
 import { Home } from "./components/Home";
 
 const App = () => {

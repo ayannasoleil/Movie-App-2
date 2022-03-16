@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/Globals';
+import { GlobalContext } from '../globals/Globals';
 
 export const Controls = ({ type, movie }) => {
   const { 

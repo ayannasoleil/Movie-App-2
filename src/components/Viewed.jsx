@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Movies } from './Movies';
-import { GlobalContext } from '../context/Globals';
+import { GlobalContext } from '../globals/Globals';
 
 export const Viewed = () => {
     const { viewed } = useContext(GlobalContext);
