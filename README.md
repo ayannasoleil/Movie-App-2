@@ -18,10 +18,10 @@ This is a React single page application with components, props,client-side routi
 
 ## Features: 
 
-1. Single Page Application
-2. 5 components minimum 
-3. 3 client-side routes using react-router mimimum 
-4. External API
+* Single Page Application
+* 5 components (minimum)
+* 3 client-side routes (minimum)
+* External API
 
 ## How To Use: 
 
@@ -29,12 +29,14 @@ This is a React single page application with components, props,client-side routi
 
 ## Requirements:
 
-1. You must make a single page application (only one index.html file) using create-react-app
+* You must make a single page application (only one index.html file) using create-react-app
 
-2. Your app should use at least 5 components in a way that keeps your code well organized
+* Your app should use at least 5 components in a way that keeps your code well organized
 
-3. There should be at least 3 client-side routes using react-router
+* There should be at least 3 client-side routes using react-router
 
-4. Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
+* Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
 
 ## Blog Post: 
+
+(MEDIUM BLOG POST)
