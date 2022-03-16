@@ -189,12 +189,12 @@ input::placeholder {
 
 .movie-card .inner-card-controls {
   display: inline;
-  background-color: black;
+  background-color: white;
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: #3F68E4;
+  background: white;
   border-radius: 5px;
   padding: 3px;
   opacity: 0;

@@ -4,7 +4,6 @@ import { GlobalContext } from '../context/Globals';
 export const Results = ({ movie }) => {
   const { 
     addMovieToFavorites, 
-    addMovieToViewed, 
     favorites, 
     viewed 
   } = useContext(GlobalContext);
@@ -14,8 +13,6 @@ export const Results = ({ movie }) => {
     
     const favoritesDisabled = storedMovie 
     ? true : storedMovieViewed ? true : false;
-
-    const viewedDisabled = storedMovieViewed ? true : false;
    
   return (
   <div className='result-card'>
@@ -39,12 +36,7 @@ export const Results = ({ movie }) => {
       disabled={favoritesDisabled}
       onClick={() => addMovieToFavorites(movie)}>
       Add to Favorites</button>
-    
-    <button className='btn'
-    disabled={viewedDisabled}
-    onClick={() => addMovieToViewed(movie)}>
-    Add to Viewed
-    </button>  
+
     </div>
     </div>
     </div>

@@ -9,7 +9,7 @@ export const Controls = ({ type, movie }) => {
     removeFromViewed } = useContext(GlobalContext);
   
   return (
-  <div className='innner-card-controls'>
+  <div className='inner-card-controls'>
     {type === 'favorites' && (
       <>
       <button className="ctrl-btn" 
