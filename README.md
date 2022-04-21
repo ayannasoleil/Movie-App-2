@@ -25,8 +25,8 @@ This is a React single page application with components, props, client-side rout
 ![welcome](https://i.makeagif.com/save/Km1XnF)
 ![search](https://i.makeagif.com/save/2UlzEk)
 ![add_button](https://i.makeagif.com/save/Pun9ag)
-![remove_button](https://i.makeagif.com/save/Y6vz12)
-![remove_action](https://i.makeagif.com/save/JJTuhu)
+![remove_action](https://i.makeagif.com/save/Y6vz12)
+![remove_button](https://i.makeagif.com/save/JJTuhu)
 
 ## Requirements:
 
