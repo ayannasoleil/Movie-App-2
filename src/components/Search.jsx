@@ -10,6 +10,7 @@ export const Search = ({ movie }) => {
 
     setQuery(e.target.value);
 
+    // fetch movie 
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
     .then((res) => res.json())
     .then((data) => {
@@ -21,6 +22,7 @@ export const Search = ({ movie }) => {
       });
     };
 
+    // search bar & results
   return (
     <div className="add-page">
       <div className="container">
@@ -32,7 +34,7 @@ export const Search = ({ movie }) => {
             onChange={onChange}
             />
           </div>
-
+        
           {results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (

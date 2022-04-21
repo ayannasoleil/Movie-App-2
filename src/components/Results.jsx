@@ -8,6 +8,7 @@ export const Results = ({movie}) => {
       title: movie.title,
       card: movie.poster_path
     }
+// post movie after search results populate 
 
   fetch('http://localhost:3000/movies', {
   method: 'POST',
@@ -21,6 +22,8 @@ export const Results = ({movie}) => {
 
   return (
     
+  // results card displays once search populates 
+
   <div className='result-card'>
     <div className="poster-wrapper">
       {movie.poster_path ? (
@@ -36,6 +39,7 @@ export const Results = ({movie}) => {
     <div className="header">
       <h3 className="title">{movie.title}</h3>
     </div>
+
 
     <div className="controls">
       <button disabled={clicked} className="btn"

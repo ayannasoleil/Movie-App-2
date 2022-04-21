@@ -39,5 +39,3 @@ export const Favorites = () => {
   );
 
   };
-
-// write function that takes in same id to filter deleted movie out of state and update state 
