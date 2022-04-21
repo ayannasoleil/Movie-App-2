@@ -39,4 +39,4 @@ This is a React single page application with components, props, client-side rout
 
 ## Blog Post: 
 
-(MEDIUM BLOG POST)
+https://medium.com/@ayannathomas.work/react-client-side-routing-ab0057a4b397
