@@ -206,7 +206,7 @@ input::placeholder {
 }
 
 .ctrl-btn {
-  color: black;
+  color: var(--secondary);
   background-color: transparent;
   border: none;
   transition: all 0.3s ease;
@@ -216,7 +216,7 @@ input::placeholder {
 }
 
 .ctrl-btn:hover {
-  color: var(--secondary);
+  color: black;
   cursor: pointer;
 }
 
