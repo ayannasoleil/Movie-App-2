@@ -23,7 +23,7 @@ This is a React single page application with components, props, client-side rout
 
 ## How To Use: 
 
-(ADD GIFS)
+
 
 ## Requirements:
 
