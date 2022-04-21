@@ -23,8 +23,10 @@ This is a React single page application with components, props, client-side rout
 
 ## How To Use: 
 ![welcome](https://i.makeagif.com/save/Km1XnF)
+![search](https://i.makeagif.com/save/2UlzEk)
 ![add_button](https://i.makeagif.com/save/Pun9ag)
-![remove_button](https://i.makeagif.com/save/Y6vz12)
+
+
 ## Requirements:
 
 * You must make a single page application (only one index.html file) using create-react-app
