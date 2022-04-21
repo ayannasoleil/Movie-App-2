@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 export const Results = ({movie}) => {
-
+  const [clicked, setClicked] = useState(false)
   const addMovieToFavorites = () => {
     
     let favoriteMovie = {
@@ -16,7 +16,7 @@ export const Results = ({movie}) => {
 
 })
   .then (res => res.json())
-  .then ((data) => (data))
+  .then ((data) => setClicked(!clicked))
   }
 
   return (
@@ -38,7 +38,7 @@ export const Results = ({movie}) => {
     </div>
 
     <div className="controls">
-      <button className="btn"
+      <button disabled={clicked} className="btn"
       onClick={addMovieToFavorites}> 
       Add to Favorites</button>
       </div>
@@ -47,3 +47,4 @@ export const Results = ({movie}) => {
     
       );
 };
+

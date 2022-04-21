@@ -12,7 +12,7 @@ This is a React single page application with components, props, client-side rout
 
 * Upon entering the app, the user is met with an About, Favorites, Home and Search page. The user can begin by searching for a movie of their choice. 
 
-* Once that movie generates, the user can then add the movie to their favorites list. The movie can be removed as desires as well.
+* Once that movie generates, the user can then add the movie to their favorites list. The movie can be removed as desired as well.
 
 ## Features: 
 

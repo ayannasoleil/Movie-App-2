@@ -2,13 +2,18 @@ import { useState, useEffect } from 'react';
 import { MovieCard } from "./MovieCard";
 
 export const Favorites = () => {
-    const [film, setFilm] = useState("");
+    const [films, setFilms] = useState("");
 
     useEffect(() => {
         fetch('http://localhost:3000/movies')
         .then(res => res.json())
-        .then(data => setFilm(data))
+        .then(data => setFilms(data))
     }, [])
+
+    const handleDelete = (deletedId) => {
+        let updatedFilms = films.filter((movie) => movie.id !== deletedId);
+        setFilms(updatedFilms);
+    };
 
   return (
     <div className="movie-page">
@@ -16,13 +21,13 @@ export const Favorites = () => {
             <div className="header">
                 <h1 className="heading">FAVORITES</h1>
             <span className="count-pill">
-                {film.length} {film.length === 1 ? "Movie" : "Movies"}
+                {films.length} {films.length === 1 ? "Movie" : "Movies"}
             </span> 
                 </div>
-        {film.length > 0 ? (
+        {films.length > 0 ? (
             <div className="movie-grid">
-                {film.map((movie) => (
-                    <MovieCard movie={movie} />
+                {films.map((movie) => (
+                    <MovieCard movie={movie} handleDelete={handleDelete} />
                 ))}
             </div>
         ) : (
@@ -34,3 +39,5 @@ export const Favorites = () => {
   );
 
   };
+
+// write function that takes in same id to filter deleted movie out of state and update state 

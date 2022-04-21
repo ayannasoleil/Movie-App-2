@@ -1,34 +1,3 @@
 {
-  "movies": [
-    {
-      "title": "Harry Potter and the Philosopher's Stone",
-      "card": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
-      "id": 1
-    },
-    {
-      "title": "Spider-Man: No Way Home",
-      "card": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-      "id": 3
-    },
-    {
-      "title": "Spider-Man",
-      "card": "/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
-      "id": 4
-    },
-    {
-      "title": "Spider-Man: Into the Spider-Verse",
-      "card": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
-      "id": 5
-    },
-    {
-      "title": "The Batman",
-      "card": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
-      "id": 6
-    },
-    {
-      "title": "Encanto",
-      "card": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
-      "id": 7
-    }
-  ]
+  "movies": []
 }
