@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Results } from './Results';
 
-export const Search = () => {
+export const Search = ({ movie }) => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   
@@ -18,9 +18,9 @@ export const Search = () => {
       } else {
         setResults([]);
       }
-    });
-  };
-  
+      });
+    };
+
   return (
     <div className="add-page">
       <div className="container">
@@ -42,7 +42,6 @@ export const Search = () => {
               ))}
             </ul>
           )}
-
         </div>
       </div>
     </div>

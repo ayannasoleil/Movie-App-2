@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
-  const classes = useStyles();
+
+const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -31,7 +32,7 @@ const Navbar = () => {
             <Button color='inherit' component={ Link } to='/home'>Movie App</Button>
           </Typography>
           <Button color="inherit" component={ Link } to='/favorites'>Favorites</Button>
-          <Button color="inherit" component={ Link } to='/viewed'>Viewed</Button>
+          <Button color="inherit" component={ Link } to='/about'>About</Button>
           <Button color="inherit" component={ Link } to='/search'>Search</Button>
         </Toolbar>
         </Container>

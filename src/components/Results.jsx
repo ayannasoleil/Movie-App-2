@@ -1,20 +1,26 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../globals/Globals';
+import React from 'react';
 
-export const Results = ({ movie }) => {
-  const { 
-    addMovieToFavorites, 
-    favorites, 
-    viewed 
-  } = useContext(GlobalContext);
+export const Results = ({movie}) => {
 
-    let storedMovie = favorites.find((o) => o.id === movie.id);
-    let storedMovieViewed = viewed.find((o) => o.id === movie.id);
+  const addMovieToFavorites = () => {
     
-    const favoritesDisabled = storedMovie 
-    ? true : storedMovieViewed ? true : false;
-   
+    let favoriteMovie = {
+      title: movie.title,
+      card: movie.poster_path
+    }
+
+  fetch('http://localhost:3000/movies', {
+  method: 'POST',
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify(favoriteMovie)
+
+})
+  .then (res => res.json())
+  .then ((data) => (data))
+  }
+
   return (
+    
   <div className='result-card'>
     <div className="poster-wrapper">
       {movie.poster_path ? (
@@ -25,7 +31,7 @@ export const Results = ({ movie }) => {
         <div className='filler-poster' />
       )}
     </div>
-
+        
     <div className='info'>
     <div className="header">
       <h3 className="title">{movie.title}</h3>
@@ -33,12 +39,11 @@ export const Results = ({ movie }) => {
 
     <div className="controls">
       <button className="btn"
-      disabled={favoritesDisabled}
-      onClick={() => addMovieToFavorites(movie)}>
+      onClick={addMovieToFavorites}> 
       Add to Favorites</button>
-
+      </div>
     </div>
     </div>
-    </div>
-  );
+    
+      );
 };

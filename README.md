@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview:
 
-This is a React single page application with components, props,client-side routing, data from the OMDb API and the use of state management.
+This is a React single page application with components, props, client-side routing, data from the OMDb API and the use of state management.
 
 ## Description:
 
