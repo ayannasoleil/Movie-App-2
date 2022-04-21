@@ -4,17 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview:
 
-This is a React single page application with components, props, client-side routing, data from the OMDb API and the use of state management.
+This is a React single page application with components, props, client-side routing, data from the TMDb API and the use of state management.
 
 ## Description:
 
-* This single page application was built to display the working knowledge of React/JSX. The Movie Finder app includes an external API from OMDb as well. 
+* This single page application was built to display the working knowledge of React/JSX. The Movie Finder app includes an external API from TMDb as well. 
 
-* Upon entering the app, the user is met with a Home, Favorites, Viewed and Search page. The user can begin by searching for a movie of their choice. 
+* Upon entering the app, the user is met with an About, Favorites, Home and Search page. The user can begin by searching for a movie of their choice. 
 
-* Once that movie generates, the user then can add the movie to their favorites list. The user has the option to add the movie to their viewed list or delete the movie from the list altogether. 
-
-* The user also has the option to remove the movie from the viewed list as well.
+* Once that movie generates, the user can then add the movie to their favorites list. The movie can be removed as desires as well.
 
 ## Features: 
 

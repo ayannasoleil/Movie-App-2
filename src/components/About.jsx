@@ -14,7 +14,7 @@ export const About = () => {
          <p>You can browse through the collection of films using the Search bar.
             Once you've found your movie of choice, you can add it to your "Favorites".
          </p>
-         <p>The Movie App provides a search engine service to users across the world.</p>
+         <p>The Movie App provides a search engine to users across the world.</p>
          <div>
        <img src='https://icon-library.com/images/movie-app-icon/movie-app-icon-27.jpg' alt='movie'/>
      </div>
