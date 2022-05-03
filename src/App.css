@@ -169,7 +169,7 @@ input::placeholder {
 }
 
 .movie-card img {
-  width: 30%;
+  width: 100%;
   display: block;
   border-radius: 5px;
 

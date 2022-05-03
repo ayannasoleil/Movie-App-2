@@ -32,15 +32,12 @@ function Favorite() {
   const listOfFavorites = faveMovie.map((movie) => {
     return (
         <div className="movie-card">
-          <div className="container">
-            <div className="header">
         {movie.title}
         <img
         src={`https://image.tmdb.org/t/p/w500/${movie.movieCard}`}
         alt={`${movie.title} Poster`}
       />
-      </div>
-      </div>
+
       </div>
     );
   });

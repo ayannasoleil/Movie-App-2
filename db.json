@@ -1,21 +1,6 @@
 {
   "movies": [
     {
-      "title": "Mean Girls",
-      "card": "/fXm3YKXAEjx7d2tIWDg9TfRZtsU.jpg",
-      "id": 1
-    },
-    {
-      "title": "Harry Potter and the Philosopher's Stone",
-      "card": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
-      "id": 2
-    },
-    {
-      "title": "Spider-Man: No Way Home",
-      "card": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-      "id": 3
-    },
-    {
       "title": "The Batman",
       "card": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
       "id": 4
