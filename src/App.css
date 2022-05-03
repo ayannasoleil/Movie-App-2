@@ -169,8 +169,10 @@ input::placeholder {
 }
 
 .movie-card img {
-  width: 100%;
+  width: 30%;
   display: block;
+  border-radius: 5px;
+
 }
 
 .movie-card .overlay {
@@ -225,3 +227,6 @@ input::placeholder {
   font-size: 3rem;
   text-align: center;
 }
+
+/* Favorite Page */
+

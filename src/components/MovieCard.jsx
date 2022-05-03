@@ -3,6 +3,7 @@ import React from "react";
 // removes movie card from favorites 
 
 export const MovieCard = ({ movie, handleDelete }) => {
+  
   const removeMovieFromFavorites = () => {
     fetch(`http://localhost:3000/movies/${movie.id}`, {
       method: "DELETE",

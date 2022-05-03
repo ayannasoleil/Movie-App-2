@@ -7,6 +7,7 @@ import "./App.css";
 import "./lib/font-awesome/css/all.min.css";
 import { Home } from "./components/Home";
 import { Favorites } from "./components/Favorites";
+import Favorite from "./components/Favorite";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/search' element={<Search />} />
+        <Route path='/favorite'element={<Favorite />} />
       </Routes>
     </Router>
   

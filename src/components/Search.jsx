@@ -6,7 +6,6 @@ export const Search = ({ movie }) => {
   const [results, setResults] = useState([]);
   
   const onChange = (e) => {
-    e.preventDefault();
 
     setQuery(e.target.value);
 

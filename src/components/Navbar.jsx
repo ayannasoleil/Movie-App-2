@@ -34,6 +34,8 @@ const classes = useStyles();
           <Button color="inherit" component={ Link } to='/favorites'>Favorites</Button>
           <Button color="inherit" component={ Link } to='/about'>About</Button>
           <Button color="inherit" component={ Link } to='/search'>Search</Button>
+          <Button color="inherit" component={ Link } to='/favorite'>Favorite</Button>
+
         </Toolbar>
         </Container>
       </AppBar>
