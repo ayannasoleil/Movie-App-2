@@ -1,7 +1,6 @@
 // create title, movieCard and set favorite movie (useState)
 // create functions for event handler changes (allowing user to type multiple movies in text box)
 // create event handler for submission (allowing user to click submit button and submit fave movie)
-// POST & GET request (allows user to post & get movie to/and from db.json file)
 
 // simple submit form that allows user to create favorite movie
 
@@ -28,6 +27,8 @@ function Favorite() {
     setTitle("");
     setMovieCard("");
   }
+
+  // fetch ("http://")
 
   const listOfFavorites = faveMovie.map((movie) => {
     return (
